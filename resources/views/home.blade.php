@@ -43,7 +43,7 @@
                         <div class="relative pb-48 overflow-hidden">
                             <img class ="absolute inset-0 h-full w-full
                             object-cover"
-                                src="{{ $candidate->image_url }}" alt="{{ $candidate->name }}">
+                                src="{{ Storage::url($candidate->image_url) }}" alt="{{ $candidate->name }}">
                         </div>
                         <div class="p-4">
                             <h2 class="mt-2 mb-2 font-bold text-xl">{{ $candidate->name }}</h2>
